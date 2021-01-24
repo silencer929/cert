@@ -1,0 +1,36 @@
+
+@media  screen and (max-width: 600px) {
+    #NCF-003 {
+        min-height: 700px;
+        width: auto;
+        background-color: ;
+    }
+
+    .form-label {
+        white-space: nowrap;
+        font-size: 10px;
+        background: red;
+    }
+
+    .nursery-info {
+        display: block;
+    }
+
+    .mandatory-criteria-certification {
+        display: block;
+    }
+    .mandatory-criteria-certification{
+        flex-direction: column;
+}
+
+    .submit-btn {}
+
+    .nusery-name {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .score-progress {
+        display: block;
+    }
+}

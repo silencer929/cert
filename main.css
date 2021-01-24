@@ -1,0 +1,157 @@
+@import url(phone.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    color:white;
+    background-color: rgba(0,0,0,0.8);
+}
+.l-sp{
+    letter-spacing: 2px;
+}
+/* global setting*/
+legend{
+    margin-left: 20px;
+    padding: 0 10px;
+}
+.checkbox{
+    display: none;
+}
+#NCF-003{
+    max-width: 1170px;
+    margin: 20px;
+    font-size: 17px;
+    border: 2px solid green;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.form-label{
+    margin: 0 auto;
+    height: 100px;
+    background-color: #64ab5e;
+    width: 100%;
+    color: #fff;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.nursery-info{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.mandatory-criteria-certification{
+    min-height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.score-progress{
+    margin: 20px auto;
+    padding: 5px 10px;
+    justify-content: space-around;
+}
+.score-progress input{
+  height: 50px;
+    width: 100px;
+    outline: none;
+}
+ progress{
+
+    height: 40px;
+     width: 300px;
+     align-content: center
+}
+
+.nursery-audit-score{
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius:10px;
+}
+/*the test code area degisn*/
+.test{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr)); 
+    padding: 20px 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.question-box{
+    border: 1px solid white;
+    max-width: 400px;
+    min-width: 400px;
+    margin: 20px 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.question-label{
+    display: flex;
+    background-color: blue;
+    min-width: 130px;
+    max-width: 200px;
+}
+.question-label:after{
+   
+}
+.question-label input{
+    width:40px;
+    text-align: right;
+    border-bottom-right-radius: 20px;
+    font-size: 17px;
+    outline: none;
+    border:transparent;
+}
+.marks select{
+    width: 280px;
+    height: 30px;
+    margin: 5px 10px;
+    background-color: white;
+    border-radius:5px;
+    outline: none;
+    font-size: 15px;
+    color: orange;
+    
+}
+.marks select:hover{
+    background-color: green;
+}
+
+
+
+.submit-btn{
+    margin: 0 auto;
+    height: 50px;
+    width: 400px;
+}
+.side-bar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:orange;
+    height: 20px;
+    width: 300px;
+
+}
+.submit-btn input{
+    outline: none;
+    padding: 15px 0px;
+    border-radius: 10px;
+    background-color: green;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-align:center;
+    font-size: 17px;
+    text-transform: uppercase;
+    width: 100%;
+}
