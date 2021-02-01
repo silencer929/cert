@@ -5,116 +5,92 @@
     <title>Document</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
-    <script type="text/javascript" src="main.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="aaa.css">
 </head>
+
 <body>
-   <form action="" id="NCF-003">
-       <div class="form-label">
-       NURSERY AUDIT/SURVEY FORM
-       </div>
-       <div class="nursery-info">
-          <span class="nusery-id">Nursery ID:<input type="text" readonly value="k001"></span > <span class="nursery-name"><label>Nursery Name:</label>kefri Nursery</span>
-       </div>
-       <fieldset class="mandatory-criteria-certification">
-           <legend>Mandtory criteria for certification</legend> <div class="question-box">
-                   <div class=" question-label"><input type="number" readonly value="1">propalugue source</div>
-                   <div class="question">Is the material used from a kefri recommendend sources? <a href="">see attached annex</a></div>
-                   <div class="marks">
+    <form action="" id="NCF-003" onsubmit="return true">
+        <div class="form-label">
+            NURSERY AUDIT/SURVEY FORM
+        </div>
+        <div class="nursery-info">
+            <span class="nusery-id">Nursery ID:<input type="text" readonly value="k001"></span> <span class="nursery-name"><label>Nursery Name:</label>kefri Nursery</span>
+        </div>
+        <fieldset class="mandatory-criteria-certification">
+            <legend>Mandtory criteria for certification</legend>
+            <div class="question-box">
+                <div class=" question-label"><input type="number" readonly value="1">propalugue source</div>
+                <div class="question">Is the material used from a kefri recommendend sources? <a href="">see attached annex</a></div>
+                <div class="marks">
                     <select>
-                    <option value="yes">Yes</option>
-                    <option value="no"> NO</option>
-                    <option value="pending" selected>pending</option>
+                        <option value="yes">Yes</option>
+                        <option value="no"> NO</option>
+                        <option value="pending" selected>pending</option>
                     </select>
-                    </div>
-                   <input type=hidden >
-                   <input type="checkbox" class="checkbox">
-               </div>
-               <div class="question-box">
-                   <div class=" question-label"><input type="number" readonly value="1">capacity</div>
-                   <div class="question">can the nusery hold 100 seedlings </div>
-                   <div class="marks">
+                </div>
+                <input type=hidden>
+                <input type="checkbox" class="checkbox-1">
+            </div>
+            <div class="question-box">
+                <div class=" question-label"><input type="number" readonly value="1">capacity</div>
+                <div class="question">can the nusery hold 100 seedlings </div>
+                <div class="marks">
                     <select>
-                    <option value="yes">Yes</option>
-                    <option value="no">NO</option>
-                    <option value="pending" selected>pending</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">NO</option>
+                        <option value="pending" selected>pending</option>
                     </select>
+                </div>
+                <input type=hidden>
+                <input type="checkbox" class="checkbox-1">
+            </div>
+
+        </fieldset>
+        <fieldset class="nursery-audit-score">
+            <legend>Nursery Audit Score</legend>
+            <div class="score-progress">
+                <label>Score:</label><input type="text" name="score" readonly><label>out of 100</label> <progress id="file" value="50" max="100">50</progress>
+            </div>
+            <section class="test">
+                <div class="question-box">
+                    <div class=" question-label"><input type="number" readonly value="1">Acessibility</div>
+                    <div class="question">Is the road leadin to the nursery motor able?</div>
+                    <div class="marks">
+                        <select>
+                            <option value="2">2 Marks</option>
+                            <option value="0">0 mark</option>
+                            <option value="0" selected>pending</option>
+                        </select>
                     </div>
-                   <input type=hidden >
-                   <input type="checkbox" class="checkbox">
-               </div>
-           
-       </fieldset>
-       <fieldset class="nursery-audit-score">
-           <legend>Nursery Audit Score</legend>
-           <div class="score-progress">
-           <label>Score:</label><input type="text" name="score" readonly><label>out of 100</label> <progress id="file" value="50" max="100">50</progress>
-           </div>
-           <section class="test">
-               <div class="question-box">
-                   <div class=" question-label"><input type="number" readonly value="1">Acessibility</div>
-                   <div class="question">Is the road leadin to the nursery motor able?</div>
-                   <div class="marks">
-                    <select>
-                    <option value="2">2 Marks</option>
-                    <option value="0">0 mark</option>
-                    <option value="0" selected>pending</option>
-                    </select>
+                    <input type=hidden>
+                    <input type="checkbox" class="checkbox">
+                </div>
+
+                <div class="question-box">
+                    <div class=" question-label"><input type="number" readonly value="1">Acessibility</div>
+                    <div class="question">Is the road leadin to the nursery motor able?</div>
+                    <div class="marks">
+                        <select>
+                            <option value="2">2 Marks</option>
+                            <option value="0">0 mark</option>
+                            <option value="0" selected>pending</option>
+                        </select>
                     </div>
-                   <input type=hidden >
-                   <input type="checkbox" class="checkbox">
-               </div>
-               <!----------------question two ----------------------->
-                     <div class="question-box">
-                   <div class=" question-label"><input type="number" readonly value="1">Acessibility</div>
-                   <div class="question">Is the road leadin to the nursery motor able?</div>
-                   <div class="marks">
-                    <select>
-                    <option value="2">2 Marks</option>
-                    <option value="0">0 mark</option>
-                    <option value="0" selected>pending</option>
-                    </select>
-                    </div>
-                   <input type=hidden >
-                   <input type="checkbox" class="checkbox">
-               </div>
-               <!----------------end of question two-----------------><div class="question-box">
-                   <div class=" question-label"><input type="number" readonly value="1">Acessibility</div>
-                   <div class="question">Is the road leadin to the nursery motor able?</div>
-                   <div class="marks">
-                    <select>
-                    <option value="2">2 Marks</option>
-                    <option value="0">0 mark</option>
-                    <option value="0" selected>pending</option>
-                    </select>
-                    </div>
-                   <input type=hidden >
-                   <input type="checkbox" class="checkbox">
-               </div>
-               <!----------------question two ----------------------->
-                     <div class="question-box">
-                   <div class=" question-label"><input type="number" readonly value="1">Acessibility</div>
-                   <div class="question">Is the road leadin to the nursery motor able?</div>
-                   <div class="marks">
-                    <select>
-                    <option value="2">2 Marks</option>
-                    <option value="0">0 mark</option>
-                    <option value="0" selected>pending</option>
-                    </select>
-                    </div>
-                   <input type=hidden >
-                   <input type="checkbox" class="checkbox">
-               </div>
-               <!----------------end of question two----------------->
-           </section>
-           <div class="side-bar">
-               <div class="u-q-n">8</div>
-           </div>
-           <div class='submit-btn'>
-               <input type="submit" name="submit" >
-           </div>
-       </fieldset>
-   </form>
-    
-</body>
-</html>
+                    <input type=hidden>
+                    <input type="checkbox" class="checkbox">
+                </div>
+
+
+
+            </section>
+            <div class="side-bar-move">
+                <div class="u-q-n">8</div>
+            </div>
+            <div class='submit-btn'>
+                <input type="submit" name="submit" id="s-btn">
+            </div>
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+</body></html>

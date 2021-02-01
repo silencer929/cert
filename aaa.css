@@ -18,21 +18,22 @@ legend{
     margin-left: 20px;
     padding: 0 10px;
 }
-.checkbox{
+.checkbox,.checkbox-1{
     display: none;
 }
 #NCF-003{
+    width:100%;
     max-width: 1170px;
-    margin: 20px;
     font-size: 17px;
     border: 2px solid green;
     display: block;
-    margin: 0 auto;
+    margin: 20px;
     position: relative;
+    overflow-x: hidden;
 }
 .form-label{
-    margin: 0 auto;
     height: 100px;
+    width: 100%;
     background-color: #64ab5e;
     width: 100%;
     color: #fff;
@@ -66,7 +67,6 @@ legend{
     outline: none;
 }
  progress{
-
     height: 40px;
      width: 300px;
      align-content: center
@@ -76,9 +76,10 @@ legend{
     margin: 10px 10px;
     padding: 10px;
     border-radius:10px;
+    border: 2px solid brown;
 }
-/*the test code area degisn*/
 .test{
+    border: 2px solid green;
     width: 90vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px,1fr)); 
@@ -137,11 +138,32 @@ legend{
 .side-bar{
     position: absolute;
     right: 0;
-    top: 0;
     background-color:orange;
-    height: 20px;
-    width: 300px;
+    height: 200px;
+    width: 50px;
+    top:50%;
+    padding: 5px;
+    margin: 10px;
 
+}
+.side-bar-move{
+    position: absolute;
+    right: 0;
+    background-color:orange;
+    height: 200px;
+    width: 50px;
+    top:50%;
+    padding: 5px;
+    margin: 10px;
+    z-index: 4;
+}
+.u-q-n{
+    background-color: black;
+    padding:5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid white;
 }
 .submit-btn input{
     outline: none;
@@ -155,3 +177,9 @@ legend{
     text-transform: uppercase;
     width: 100%;
 }
+
+/* test credentials*/
+.submit-btn input:hover{
+    background-color: blue;
+}
+

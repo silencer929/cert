@@ -1,9 +1,8 @@
 
 @media  screen and (max-width: 600px) {
     #NCF-003 {
-        min-height: 700px;
-        width: auto;
-        background-color: ;
+        height: 100%;
+        width: 100%;
     }
 
     .form-label {
