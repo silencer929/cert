@@ -1,17 +1,49 @@
+
 var select= document.querySelectorAll('.select');
 const test = document.querySelector(".test");
+const submitBtn = document.querySelector("#submit-btn");
+const sideBar = document.querySelector(".side-bar");
+const tab= document.querySelector(".tab");
+var questionLeftOut = [...document.querySelectorAll(".question-leftout")]
+var tabs=[]
+
+class Products {
+    async getQuestions() {
+        try {
+            tabs= new Queue();
+            var data = await fetch("user.json");
+            let result = await data.json();
+            let quiz= result.test
+            quiz.forEach(part=>{
+                tabs.enqueue(part)
+            })
+            return tabs;
+        } catch (error) {
+            console.log(error)
+        }
+    }
+}
+ 
 class UI {
-    displayQuestions(questions) {
+    getOptions(marks){
+        var option = "";
+        marks.forEach(mark=>{
+            option+=`<option value="${mark}">${mark} marks</option>`
+        })
+        return option
+    }
+    displayQuestions() {
         var result="";
-        questions.forEach(question => {
+        var questions =tabs.dequeue()
+         var key=Object.keys(questions);
+        questions[key[0]].forEach(question => {
             result +=`<div class="question-box">
-                   <div class=" question-label"><input type="number" readonly value="${question.id_no}">${question.label}</div>
+                   <input type="number" readonly value="${question.question_id}" class="question_id">
                    <div class="question">${question.question}</div>
                    <div class="marks">
-                    <select class="selected">
-                    <option value="2">${question.marks.fc} Marks</option>
-                    <option value="0"> ${question.marks.sc} mark</option>
-                    <option value="0" selected>pending</option>
+                    <select class="selected">`
+                   + this.getOptions(question.marks) +
+                    `<option value="pending" selected>pending</option>
                     </select>
                     </div>
                    <input type=hidden>
@@ -24,10 +56,9 @@ class UI {
         var select = [...document.querySelectorAll(".selected")];
         select.forEach(option => {
             option.addEventListener("change",(event)=>{
-                console.log(event.value)
+                console.log(option.value)
             })
         })
-        console.log(select)
     }
     computeTotal(){
     }
@@ -35,26 +66,41 @@ class UI {
     }
 
 }
-class Products {
-    async getQuestions() {
-        try {
-            var data = await fetch("new.json");
-            let result = await data.json();
-            let questions = result.test;
-            return questions;
-        } catch (error) {
-            console.log(error)
-        }
-    }
-}
 
+function showSideBar(){
+   submitBtn.addEventListener("click",()=>{
+      sideBar.classList.toggle("hide-side-bar");
+       questionLeftOut.forEach((question,index)=>{
+          if(question.style.animation){
+              question.style.animation = "";
+          }
+           else{
+                question.style.animation = `fade-question-leftout 4s ease forwards ${index / 5 + 0.2}s`;
+           }
+       })
+   }) 
+}
+function check(){
+    questionLeftOut.forEach(question=>{
+           question.addEventListener("click",()=>{
+//               console.log("hello")
+           })
+       })
+}
 
 document.addEventListener("DOMContentLoaded", ()=>{
 	var products = new Products();
     const ui= new UI();
-    products.getQuestions().then(questions => {
-        ui.displayQuestions(questions);
-    }).then(()=>{
-        ui.computeTotal();
+    showSideBar();
+    check();
+    submitBtn.addEventListener("click",()=>{
+        ui.displayQuestions()
     })
+    products.getQuestions().then(tabs => {
+        ui.displayQuestions();
+
+    }).then(()=>{
+        UI.getSelecetedValues();
+        ui.computeTotal();
+    });
 });

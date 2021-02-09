@@ -4,139 +4,79 @@
             "id_no": "1",
             "label": "accessibility",
             "question": "Is the road leading to the nursery motor able?",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+            "marks": ["0","1","2"]
         }, {
             "id_no": "2",
             "label": "road sign",
             "question": "Is there a nursery road sign?",
-            "marks": {
-                "default": "pending",
-                "fc": "1",
-                "sc": "0"
-            }
+            "marks": ["0","1","2"]
         }, {
             "id_no": "3",
             "label": "mobility",
             "question": "Does the nursery design allow easy movement of vehicles and people?",
-            "marks": {
-                "default": "pending",
-                "fc": "1",
-                "sc": "0"
-            }
+             "marks": ["0","1","2"]
         }, {
             "id_no": "4",
             "label": "positioning",
             "question": "Are the seedlings well positioned and centered in the pot relative to the root ball?",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+           "marks": ["0","1","2"]
         }, {
             "id_no": "5",
             "label": "planting nature",
             "question": "Is there one plant per pot that is single, straight, sturdy, and well centred in the pot?",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+            "marks": ["0","1","2"]      
         },
         {
             "id_no": "6",
             "label": "post mature seedlings",
             "question": "Look for absence of overgrown seedlings in the nursery/seedlings carried from the previous season?",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+           "marks": ["0","1","2"]
         }, {
             "id_no": "7",
             "label": "roots nature",
             "question": "Are the roots well positioned( coiled roots in the pot is a minus) and is there satisfactory root development?",
-            "marks": {
-                "default": "pending",
-                "fc": "3",
-                "sc": "0"
-            }
+          "marks": ["0","1","2","3"]
         }, {
             "id_no": "8",
             "label": "Sorting",
             "question": "Are there seedlings sorted into species and age?",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+            "marks": ["0","1","2"]
         }, {
             "id_no": "9",
             "label": "Ratio",
             "question": "Is there a good Root:Shoot ratio(1:2)?",
-            "marks": {
-                "default": "pending",
-                "fc": "3",
-                "sc": "0"
-            }
+            "marks": ["0","1","2","3"]
         }, {
             "id_no": "10",
             "label": "height",
             "question": "Are the seed  or transplant beds constructed at the recommended height?(at least at 30 cm high) to facilitate proper root development",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+            "marks": ["0","1","2"]
         }, {
             "id_no": "11",
             "label": "cleaness",
             "question": "is the nursery weeded and clean?",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+            "marks": ["0","1","2"]
         }, {
             "id_no": "12",
             "label": "coloration",
             "question": "Are there symotims of nutrient deficiencies?",
-            "marks": {
-                "default": "pending",
-                "fc": "3",
-                "sc": "0"
-            }
+            "marks": ["0","1","2","3"]
         }, {
             "id_no": "13",
             "label": "transplanting",
             "question": "For nurseries raising seedlings that require pricking out; Is the transplanting of the greminants to the growing beds/pots done with great care to prevent deformation of the root system?",
-            "marks": {
-                "default": "pending",
-                "fc": "3",
-                "sc": "0"
-            }
+           "marks": ["0","1","2","3"]
         },
         {
             "id_no": "14",
             "label": "Occurance",
             "question": "Are there incidences of plants and diseases?",
-            "marks": {
-                "default": "pending",
-                "fc": "8",
-                "sc": "0"
-            }
+            "marks": ["0","1","2","3","4","5","6","7","8"]
         }, {
             "id_no": "15",
             "label": "pests",
             "question": "For any dected pests wre they reported to the relevant authorities(KEFRI) and appropriate preventive and control measures taken?",
-            "marks": {
-                "default": "pending",
-                "fc": "2",
-                "sc": "0"
-            }
+            "marks": ["0","1","2"]
         }
     ]
 }

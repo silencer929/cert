@@ -1,21 +1,23 @@
 
 @media  screen and (max-width: 600px) {
+    {
+        box-sizing: border-box;
+    }
     #NCF-003 {
         height: 100%;
-        width: 100%;
+        width: auto;
     }
 
     .form-label {
         white-space: nowrap;
         font-size: 10px;
-        background: red;
+        background-color: red;
+    }
+    .score-progress{
+        flex-direction: column;
     }
 
     .nursery-info {
-        display: block;
-    }
-
-    .mandatory-criteria-certification {
         display: block;
     }
     .mandatory-criteria-certification{
@@ -31,5 +33,8 @@
 
     .score-progress {
         display: block;
+    }
+    .nursery-audit-score{
+        outline-color: white;
     }
 }
