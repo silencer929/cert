@@ -12,6 +12,11 @@ class Queue{
         this.rear=0;
         this.queue=[]
     }
+    maximum_peek(){
+        if(this.front > this.length){
+            throw new Forbidden("the maximum limit is exceed")
+        }
+    }
     queue_is_full(){
         if(this.length==this.rear){
             throw new Forbidden("the queue is full");
@@ -43,6 +48,20 @@ class Queue{
             console.log(error.message)
         }
     }
+    peek(){
+        try{
+            if(!this.maximum_peek()){
+                this.front++;
+                var data = this.queue[this.front];
+                return data;
+            }
+        }
+        catch(error){
+            console.log(error);
+            return;
+        }
+    }
+    
 }
 
 
